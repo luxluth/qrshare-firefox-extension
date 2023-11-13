@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/popup.css">
+    <script src="qrious.min.js" defer></script>
+    <script src="translations.js" defer></script>
+    <script src="content.js" defer></script>
+</head>
+<body>
+    <h1 class="title"
+    data-i18n="popup_title"
+    >{{popup_title}}</h1>
+    <div class="qr_container">
+        <canvas id="qr"></canvas>
+    </div>
+    <input type="text" id="qr_text">
+    <div class="actions">
+        <button class="copy_image"
+        data-i18n="popup_copy"
+        >{{popup_copy}}</button>
+        <button class="down_image"
+        data-i18n="popup_download"
+        >{{popup_download}}
+        </button>
+    </div>
+    <div class="error"></div>
+</body>
+</html>
